@@ -1,0 +1,16 @@
+.button {
+  padding: 8px 8px;
+  border-width: 0;
+  border-radius: 4px;
+}
+
+.button-primary {
+  background: #2d8cf0;
+  border: 1px solid #57a3f3;
+  color: #fff;
+}
+.button-warn {
+  /*background: red;*/
+  color: #ff5745;
+  background: #eee;
+}
