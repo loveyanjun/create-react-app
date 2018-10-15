@@ -22,6 +22,7 @@ class App extends Component {
               <label>密&nbsp;码：</label>
               <input type="text"></input><br/>
           </div>
+          <div>develop分支建立 </div>
         </div>
 
         <Button type="warn"/>
