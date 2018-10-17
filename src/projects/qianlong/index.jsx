@@ -3,8 +3,12 @@ import Home from './home'
 import Download from './download'
 import Merchant from './merchant'
 
-import { Router, Route, Link, Switch } from 'react-router-dom'
-import User from './user'
+import {
+    BrowserRouter as Router,
+    Route,
+    // Switch,
+    Link
+}from 'react-router-dom'
 
 // 未使用react-router
 
@@ -57,20 +61,14 @@ export default class QianLongApp extends React.PureComponent {
 
 */
 
-export default class QianLongApp extends React.PureComponent {
-    constructor(props) {
-        super(props)
-        this.state = {
-            users: [{name: '张', id: 1}, {name: 'yu', id: 2}, {name: 'bai', id: 3}]
-        }
-    }
+export default class App extends React.PureComponent {
     render () {
         return (
+        <Router>
             <div>
-                <h1>APP页面</h1>
                 <ul>
                     <li>
-                        <Link to="/home">首页</Link>
+                        <Link to="/">首页</Link>
                     </li>
                     <li>
                         <Link to="/download">下载页</Link>
@@ -79,25 +77,11 @@ export default class QianLongApp extends React.PureComponent {
                         <Link to="/merchant">商家接入页</Link>
                     </li>
                 </ul>
-                <Switch>
-                    <Route path="/" component={Home}/>
-                    <Route path="/download" component={Download} />
-                    <Route path="/merchant" component={Merchant} />
-                </Switch>
-            </div>
-          )
+                <Route path="/" component={Home} />
+                <Route path="/download" component={Download} />
+                <Route path="/merchant" component={Merchant} />
+        </div>
+        </Router>
+        )
     }
 }
-
-
-// React.render((
-//     <Router>
-//       <Route path="/" component={App}>
-//         <Route path="download" component={Download}/>
-//         <Route path="merchant" component={Merchant}>
-//           <Route path="/user/:userId" component={User}/>
-//         </Route>
-//         {/* <Route path="*" component={NoMatch}/> */}
-//       </Route>
-//     </Router>
-//   ), document.body)
