@@ -6,7 +6,7 @@ import Merchant from './merchant'
 import {
     BrowserRouter as Router,
     Route,
-    // Switch,
+    Switch,
     Link
 }from 'react-router-dom'
 
@@ -66,20 +66,11 @@ export default class App extends React.PureComponent {
         return (
         <Router>
             <div>
-                <ul>
-                    <li>
-                        <Link to="/">首页</Link>
-                    </li>
-                    <li>
-                        <Link to="/download">下载页</Link>
-                    </li>
-                    <li>
-                        <Link to="/merchant">商家接入页</Link>
-                    </li>
-                </ul>
-                <Route path="/" component={Home} />
-                <Route path="/download" component={Download} />
-                <Route path="/merchant" component={Merchant} />
+                <Switch>
+                    <Route path="/" component={Home} />
+                    <Route path="/download" component={Download} />
+                    <Route path="/merchant" component={Merchant} />
+                </Switch>
         </div>
         </Router>
         )
