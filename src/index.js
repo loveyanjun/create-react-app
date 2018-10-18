@@ -18,7 +18,9 @@ import {
 import createBrowserHistory from 'history/createBrowserHistory'
 
 // 下面接入练习的项目
-import App from './projects/qianlong'
+// 钱隆项目
+// import App from './projects/qianlong'
+import App from './projects/offcial website'
 
 const history = createBrowserHistory()
 
@@ -50,6 +52,7 @@ const history = createBrowserHistory()
 //         )
 //     }
 // }
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 

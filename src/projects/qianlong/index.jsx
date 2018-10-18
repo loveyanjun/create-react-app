@@ -67,12 +67,13 @@ export default class App extends React.PureComponent {
         <Router>
             <div>
                 <Switch>
-                    <Route path="/" component={Home} />
+                    <Route path="/" component={Home}/>
                     <Route path="/download" component={Download} />
                     <Route path="/merchant" component={Merchant} />
                 </Switch>
-        </div>
+            </div>
         </Router>
         )
     }
 }
+'/Users/liyanjun/Documents/mbr/chainlong/src/static/images/manage.png'
