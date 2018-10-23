@@ -9,20 +9,23 @@ import Merchant from './projects/qianlong/merchant'
 // import { Router, Switch, Route } from 'react-router'
 
 import {
-    BrowserRouter as Router,
+    // hashHistory,
+    // BrowserRouter as Router,
+    Router,
     Route,
     Switch,
     Link
 }from 'react-router-dom';
-
-import createBrowserHistory from 'history/createBrowserHistory'
+// import createBrowserHistory from 'history/createBrowserHistory'
 
 // 下面接入练习的项目
 // 钱隆项目
-// import App from './projects/qianlong'
-import App from './projects/offcial website'
+import App from './projects/qianlong'
+// import App from './projects/offcial website'
 
-const history = createBrowserHistory()
+import MyRouter from './projects/mytest/index'
+
+// const history = createBrowserHistory()
 
 // export default class MyApp extends React.PureComponent {
 //     render () {
@@ -53,6 +56,17 @@ const history = createBrowserHistory()
 //     }
 // }
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// const routes=[{
+//     pathname: '/',
+//     component: Home
+// }]
+
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
+
+
+// ReactDOM.render(<Router history={Router} routes={routes}/>, document.getElementById('root'))
+
+ReactDOM.render(<MyRouter />, document.getElementById('root'))
 

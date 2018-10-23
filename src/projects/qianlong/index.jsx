@@ -9,6 +9,7 @@ import {
     Switch,
     Link
 }from 'react-router-dom'
+// import {browserHistory} from 'react-router'
 
 // 未使用react-router
 
@@ -76,4 +77,3 @@ export default class App extends React.PureComponent {
         )
     }
 }
-'/Users/liyanjun/Documents/mbr/chainlong/src/static/images/manage.png'
