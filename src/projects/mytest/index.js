@@ -19,7 +19,7 @@ export default BasicRoute;
 
 /*
 
-// react-router-dom中不存在hashHistory
+// react-router-dom中不存在hashHistory，所以下面方法不对
 import React from 'react';
 import { HashRouter, Route, Switch, hashHistory } from 'react-router-dom';
 import Home from './home';

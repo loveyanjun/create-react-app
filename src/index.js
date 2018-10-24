@@ -10,7 +10,8 @@ import registerServiceWorker from './registerServiceWorker';
 // import App from './projects/qianlong'
 // import App from './projects/offcial website'
 
-import MyRouter from './projects/mytest/index'
+// import MyRouter from './projects/mytest/index'
+import MyRouter from './projects/offcial website/index'
 
 // const history = createBrowserHistory()
 
