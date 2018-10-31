@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 // import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -11,7 +11,7 @@ import registerServiceWorker from './registerServiceWorker';
 // import App from './projects/offcial website'
 
 // import MyRouter from './projects/mytest/index'
-import MyRouter from './projects/offcial website/index'
+// import MyRouter from './projects/offcial website/index'
 
 // const history = createBrowserHistory()
 
@@ -49,12 +49,13 @@ import MyRouter from './projects/offcial website/index'
 //     component: Home
 // }]
 
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+// 引入component的入口
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
 
 
 // ReactDOM.render(<Router history={Router} routes={routes}/>, document.getElementById('root'))
 
-ReactDOM.render(<MyRouter />, document.getElementById('root'))
+// 引入路由的入口
+// ReactDOM.render(<MyRouter />, document.getElementById('root'))
 
