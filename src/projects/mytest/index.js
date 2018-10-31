@@ -8,7 +8,7 @@ const BasicRoute = () => (
     <HashRouter>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/detail" component={Detail}/>
+            <Route path="/detail" component={Detail}/>
         </Switch>
     </HashRouter>
 );

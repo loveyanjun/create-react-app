@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// import App from './App';
+// import registerServiceWorker from './registerServiceWorker';
 // import createBrowserHistory from 'history/createBrowserHistory'
 
 // 下面接入练习的项目
@@ -12,6 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 // import MyRouter from './projects/mytest/index'
 // import MyRouter from './projects/offcial website/index'
+import Website from './projects/website/index'
 
 // const history = createBrowserHistory()
 
@@ -50,12 +51,17 @@ import registerServiceWorker from './registerServiceWorker';
 // }]
 
 // 引入component的入口
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
 
 
 // ReactDOM.render(<Router history={Router} routes={routes}/>, document.getElementById('root'))
 
 // 引入路由的入口
 // ReactDOM.render(<MyRouter />, document.getElementById('root'))
+
+
+// 引入自己的网站
+
+ReactDOM.render(<Website />,document.getElementById('root'))
 

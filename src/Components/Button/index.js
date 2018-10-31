@@ -2,13 +2,7 @@ import React, { Component } from 'react'
 import './style.css';
 
 class Button extends Component {
-  constructor(props) {
-    super(props)
-    debugger
-    console.log(this.props)
-  }
-
-  render() {
+  render () {
     return (
       <button className={'button ' + 'button-' + this.props.type}>
         <span>按钮新样式</span>

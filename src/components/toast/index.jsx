@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import 'styles/components/toast.less'
+import './toast.css'
 
 class Toast extends React.PureComponent {
   static propTypes = {
