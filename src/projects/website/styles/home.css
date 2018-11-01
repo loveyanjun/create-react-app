@@ -1,4 +1,8 @@
 .website-d3 {
     color: brown;
-    /* background-color: blueviolet; */
+}
+
+.histogram {
+    display: flex;
+    align-items: flex-end;
 }
