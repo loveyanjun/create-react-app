@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router-dom'
+// import { Router, Route } from 'react-router-dom'
 import './index.css';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
@@ -14,7 +14,7 @@ import './index.css';
 // import MyRouter from './projects/mytest/index'
 // import MyRouter from './projects/offcial website/index'
 import Website from './projects/website/index'
-import Home from './projects/website/home'
+// import Home from './projects/website/home'
 
 // const history = createBrowserHistory()
 
@@ -63,13 +63,6 @@ import Home from './projects/website/home'
 // ReactDOM.render(<MyRouter />, document.getElementById('root'))
 
 
-// 引入自己的网站
+// 在这个工程里面，将会创建一个属于自己的项目：引入自己的网站
 
-// ReactDOM.render(<Website />,document.getElementById('root'))
-
-const routes = {
-    path: '/',
-    component: Home
-}
-
-ReactDOM.render(<Router history={routes}/>, document.getElementById('root'))
+ReactDOM.render(<Website />,document.getElementById('root'))
