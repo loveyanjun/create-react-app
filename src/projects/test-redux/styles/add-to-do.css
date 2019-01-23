@@ -1,0 +1,9 @@
+.add-todo-input {
+    width: 200px;
+    height: 25px;
+}
+.add-todo-button {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
