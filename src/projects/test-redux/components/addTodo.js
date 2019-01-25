@@ -9,7 +9,6 @@ class AddToDo extends React.PureComponent {
     }
 
     handleChange = (e) => {
-        console.log(e.target.value)
         const value = e.target.value
         this.setState({
             value
@@ -27,7 +26,7 @@ class AddToDo extends React.PureComponent {
         return (
             <div>
                 <input className='add-todo-input' onChange={this.handleChange} value={this.state.value}/>
-                <button className='add-todo-button' onClick={this.handleAddTo}>点击</button>
+                <button className='add-todo-button' onClick={this.handleAddTo}>点击添加</button>
             </div>
         )
     }

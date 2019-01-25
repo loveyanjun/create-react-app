@@ -11,7 +11,6 @@ let nextTodoId = 0
 // })
 
 export const addTodo = content => {
-    console.log(content)
     return {
         type: ADD_TODO,
         payload: {
