@@ -22,10 +22,16 @@ const mapStateToProps = state => {
     // console.log(todos)
     // return { todos }
     const { visibilityFilter } = state
-    console.log('todoList:')
-    const todos = getTodosByVisibilityFilter(state, visibilityFilter)
-    console.log(todos)
-    return { todos }
+    // console.log('state中的todos')
+    console.log(state.todos)
+    // const todos = getTodosByVisibilityFilter(state, visibilityFilter)
+    const { todoList } = state.todos
+    console.log('todo:')
+    console.log(todoList)
+    return {
+        todoList
+    }
+    // return { todos }
 }
 
 export default connect(mapStateToProps)(TodoList)
