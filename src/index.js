@@ -7,7 +7,8 @@ import store from './redux/store'
 // import TestRedux from './projects/test-redux/index'
 // import MyTest from './projects/website/index.js'
 // import Website from './projects/offcial website'
-import Case from './case/index'
+// import Case from './case/index'
+import Website from './projects/website'
 
 
 ReactDOM.render(
@@ -15,5 +16,6 @@ ReactDOM.render(
     {/* <TestRedux /> */}
     {/* <MyTest /> */}
     {/* <Website /> */}
-    <Case />
+    {/* <Case /> */}
+    <Website />
 </Provider>,document.getElementById('root'))
