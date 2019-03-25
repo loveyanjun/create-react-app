@@ -7,7 +7,7 @@ export default class CaseVideo extends React.PureComponent {
     componentDidMount() {
         // Player property
         const video = this.refs.player
-        video.playbackRate = 1
+        video.playbackRate = 1 // 视频播放的速度
         video.volume = 0.1 // 设置音量的大小
         const videoWidth = video.width
         const videoHeight = video.height
@@ -28,10 +28,6 @@ export default class CaseVideo extends React.PureComponent {
         return (
             <div className="case-video">
                 <h1>视频展示：</h1>
-                <div>
-                    <img src={require('./images/candy.png')} alt=""/>
-                    <img className="image" src={require('../../static/media/candy.png')} alt=""/>
-                </div>
                 {/* <video className="video" src={require('./images/video.mp4')} controls></video> */}
                 
                 {/* 使用video-react插件 */}
