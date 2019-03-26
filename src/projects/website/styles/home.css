@@ -1,8 +1,16 @@
 .website-d3 {
     color: brown;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .histogram {
     display: flex;
     align-items: flex-end;
+}
+
+.axis {
+    margin-left: 50px;
+    background: #0f0;
+    /* padding: 50px; */
 }
